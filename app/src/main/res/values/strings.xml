@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AccessibilityApp</string>
+    <string name="hint">开启AccessibilityApp</string>
+</resources>
