@@ -1,7 +1,5 @@
 package com.example.fensan.accessibilityapp;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,7 +14,7 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView installTv;
+    private TextView mInstallTv;
     /**
      * 你得引导用户去设置界面吗，你不能让用户自己去找吧。
      */
@@ -30,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        installTv=(TextView)this.findViewById(R.id.tv2);
-        installTv.setOnClickListener(new View.OnClickListener(){
+        mInstallTv =(TextView)this.findViewById(R.id.tv2);
+        mInstallTv.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 //调用安装器去安装我们的apk 一键安装开始啦，如果用户把那个服务打开了的话。
